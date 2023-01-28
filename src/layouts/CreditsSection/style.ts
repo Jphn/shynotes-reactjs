@@ -1,8 +1,6 @@
 import { styled } from '@stitches/react';
 
 export const CreditsWrapper = styled('footer', {
-	border: 'red solid 2px', // Debug
-
 	width: '100vw',
 	maxWidth: '100%',
 	height: 'fit-content',
