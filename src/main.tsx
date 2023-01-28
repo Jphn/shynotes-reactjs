@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home';
+import Note from './pages/Note';
 
 const router = createBrowserRouter([
 	{
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/:noteName',
-		element: <h1>Hello from dynamic page!</h1>,
+		element: <Note />,
 	},
 ]);
 
