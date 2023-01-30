@@ -5,4 +5,5 @@ export const StyledLink = styled(Link, {
 	textDecoration: 'none',
 	fontSize: '2.6rem',
 	maxHeight: 'fit-content',
+	fontWeight: 'bold',
 });
