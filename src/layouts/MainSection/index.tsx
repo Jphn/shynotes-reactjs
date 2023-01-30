@@ -1,17 +1,36 @@
+import { FormEvent, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import formatNoteName from '../../utils/formatNoteName';
 import {
-	MainWrapper,
-	HeaderWrapper,
 	Header,
-	SubheaderWrapper,
-	SubheaderText,
-	NoteNameInput,
+	HeaderWrapper,
+	MainWrapper,
 	NoteNameButton,
+	NoteNameInput,
 	NoteNameWrapper,
 	StyledArrowSvg,
+	SubheaderText,
+	SubheaderWrapper,
 } from './style';
-import ArrowSrc from '../../assets/arrow.svg';
 
 export default function () {
+	const navigate = useNavigate();
+
+	const [noteName, setNoteName] = useState('');
+
+	const actions = {
+		handleSubmit(e: FormEvent<HTMLFormElement>) {
+			e.preventDefault();
+
+			let notePath = formatNoteName(noteName);
+
+			navigate(`/${notePath}`);
+		},
+		handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+			setNoteName(e.target.value);
+		},
+	};
+
 	return (
 		<MainWrapper>
 			<HeaderWrapper>
@@ -25,12 +44,14 @@ export default function () {
 					<SubheaderText>This is shyNotes.</SubheaderText>
 				</SubheaderWrapper>
 
-				<NoteNameWrapper>
+				<NoteNameWrapper onSubmit={actions.handleSubmit}>
 					<NoteNameInput
 						type="text"
 						placeholder="Note name..."
+						value={noteName}
+						onChange={actions.handleChange}
 					/>
-					<NoteNameButton>Go!</NoteNameButton>
+					<NoteNameButton type="submit">Go!</NoteNameButton>
 				</NoteNameWrapper>
 			</HeaderWrapper>
 
