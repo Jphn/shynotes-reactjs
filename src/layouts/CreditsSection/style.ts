@@ -1,4 +1,5 @@
 import { styled } from '@stitches/react';
+import Colors from '../../styles/Colors';
 
 export const CreditsWrapper = styled('footer', {
 	width: '100vw',
@@ -11,10 +12,13 @@ export const CreditsWrapper = styled('footer', {
 	flexDirection: 'column',
 	gap: '1.2rem',
 	alignItems: 'center',
+
+	backgroundColor: Colors.green,
 });
 
 export const Header = styled('h2', {
 	fontSize: '3.2rem',
+	color: Colors.middle,
 });
 
 export const Quote = styled('p', {
