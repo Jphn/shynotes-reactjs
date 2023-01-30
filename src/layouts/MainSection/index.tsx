@@ -7,7 +7,7 @@ import {
 	NoteNameInput,
 	NoteNameButton,
 	NoteNameWrapper,
-	ArrowImg,
+	StyledArrowSvg,
 } from './style';
 import ArrowSrc from '../../assets/arrow.svg';
 
@@ -34,7 +34,7 @@ export default function () {
 				</NoteNameWrapper>
 			</HeaderWrapper>
 
-			<ArrowImg src={ArrowSrc} />
+			<StyledArrowSvg />
 		</MainWrapper>
 	);
 }

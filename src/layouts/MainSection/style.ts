@@ -1,4 +1,6 @@
 import { styled } from '@stitches/react';
+import ArrowSvg from '../../assets/ArrowSvg';
+import Colors from '../../styles/Colors';
 
 export const MainWrapper = styled('main', {
 	display: 'flex',
@@ -49,8 +51,14 @@ export const NoteNameButton = styled('button', {
 	height: '100%',
 });
 
-export const ArrowImg = styled('img', {
-	width: '4rem',
-	position: 'absolute',
-	bottom: '0',
-});
+export const StyledArrowSvg = () =>
+	ArrowSvg({
+		style: {
+			width: '4rem',
+			height: '4rem',
+			position: 'absolute',
+			bottom: '0',
+			fill: Colors.green,
+			cursor: 'pointer',
+		},
+	});
