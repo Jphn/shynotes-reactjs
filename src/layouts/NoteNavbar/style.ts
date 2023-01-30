@@ -19,12 +19,12 @@ export const Nav = styled('nav', {
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	gap: '1rem',
+	gap: '1.5rem',
 });
 
 export const Container = styled('div', {
 	display: 'flex',
-	gap: '2.5rem',
+	gap: '3.5rem',
 	justifyContent: 'center',
 	alignItems: 'center',
 
