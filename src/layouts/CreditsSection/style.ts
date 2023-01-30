@@ -22,7 +22,8 @@ export const Header = styled('h2', {
 });
 
 export const Quote = styled('p', {
-	fontSize: '1.4rem',
+	fontSize: '1.5rem',
+	fontStyle: 'oblique',
 });
 
 export const SocialWrapper = styled('div', {
