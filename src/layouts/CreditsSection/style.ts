@@ -32,5 +32,5 @@ export const SocialWrapper = styled('div', {
 });
 
 export const CopyrightText = styled('p', {
-	fontSize: '1.4rem',
+	fontSize: '1.5rem',
 });
