@@ -1,4 +1,5 @@
 import { globalCss } from '@stitches/react';
+import Colors from './Colors';
 
 export default globalCss({
 	'@import': [
@@ -13,6 +14,7 @@ export default globalCss({
 		textDecoration: 'none',
 
 		fontFamily: "'Fragment Mono', monospace",
+		color: Colors.darker,
 	},
 
 	html: {
