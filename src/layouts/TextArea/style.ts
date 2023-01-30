@@ -1,4 +1,5 @@
 import { styled } from '@stitches/react';
+import Colors from '../../styles/Colors';
 
 export const FullScreenTextarea = styled('textarea', {
 	width: '100%',
@@ -12,4 +13,6 @@ export const FullScreenTextarea = styled('textarea', {
 	outline: 'none',
 
 	fontSize: '1.7rem',
+
+	backgroundColor: Colors.lighter,
 });
