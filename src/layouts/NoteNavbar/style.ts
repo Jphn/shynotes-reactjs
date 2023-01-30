@@ -1,4 +1,5 @@
 import { styled } from '@stitches/react';
+import Colors from '../../styles/Colors';
 
 export const Header = styled('header', {
 	width: '100vw',
@@ -9,6 +10,8 @@ export const Header = styled('header', {
 	display: 'flex',
 	justifyContent: 'space-between',
 	alignItems: 'center',
+
+	backgroundColor: Colors.green,
 });
 
 export const Nav = styled('nav', {
